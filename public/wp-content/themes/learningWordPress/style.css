@@ -1,0 +1,348 @@
+/*
+Theme Name: Memlisen.se
+Theme URI: http://wordpress.memlisen.com
+Author: Emmelie Sundell
+Description; A project in my front end devoloper ducation. 
+Version: 1.0
+Text Domain: Memlisen */
+
+*, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: whitesmoke;
+}
+
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+p {
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
+}
+
+/* Header */
+
+.bg-header{
+	top: 0;
+	left: 0;
+    position: fixed;
+    background-image: url(bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    filter:contrast(120%) brightness(100%);
+    z-index: -2;
+    max-width: none; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(overlay.png);
+    z-index: -1;
+    opacity: 10s;
+}
+
+
+.overlay, .bg-header {
+     	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.site-header {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.learn-more{
+    margin: 2%;
+    background-color: rgba(0,0,0,0.48);
+    border: 3px solid black;
+    color: white;
+    padding: 8px;
+    border-radius: none;
+}
+    .learn-more:hover {
+        background-color: black;
+    }
+
+/* Standard Nav Menu */
+
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+.site-nav {
+	background-color: rgba(0,0,0,0.48);
+	
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: right;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+/* Header Nav Menu */
+.header-menu {
+	margin-top: 30px;
+}
+
+.header-menu ul li {
+	margin-right: 5px;
+}
+
+.header-menu ul li a{
+	color: white;
+}
+
+.header-menu ul li a:link,
+.header-menu ul li a:visited {
+	padding: 10px 17px;
+	text-decoration: none;
+}
+
+.header-menu ul li a:hover {
+	background-color: black;
+}
+
+.header-menu ul li.current-menu-item a:link,
+.header-menu ul li.current-menu-item a:visited {
+	font-weight: bold;
+	background-color: black;
+	color: #FFF;
+}
+
+.site-nav p {
+	width: 20%;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+/* Footer */
+.site-footer {
+	margin-top: 30px;
+	border-top: 1px solid #DDD;
+	font-size: 84%;
+}
+
+/* One page design */
+.about {
+    background-color: #f1f1f1;
+    height: 100%;
+    padding: 3%;
+	color: black;
+}
+
+   .about h2 {
+    margin: 0;
+    text-align: center;
+    float: left;
+    width: 50%;
+    }
+    
+    .about img {
+    float: right;
+    width: 50%;
+    height: 100%;
+    }
+    
+   .about p {
+    text-align: center;
+    width: 45%;
+    padding: 2%;
+    }
+
+/* My service */
+
+
+
+.services{
+    height: 100%;
+    background-color: #4D4D4D;
+    
+
+}
+
+.services h1{
+        margin: 0;
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+
+.service-box{
+    margin-bottom: 15px; 
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #D1D1D1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065); 
+    box-sizing: border-box;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    color: white;
+    margin: 4%;
+    margin-top: 2%;
+	height: 300px;
+}
+
+   .service-box img{
+        width: 20%;
+        height: 20%;
+	   
+    }
+
+
+/* My work */
+
+
+.work{
+    height: 100vh;
+    background-color: #f1f1f1;
+	color: black;
+/*
+    justify-content: center;
+	align-items: center;
+	flex-direction: column;
+*/
+
+}
+
+.work {
+	height: 100%;
+}
+
+   .work h2 {
+        margin: 0;
+        text-align: center;
+        padding: 2%;
+    }
+    
+   .work ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    .work li {
+        display: inline-block;
+        font-size: 18px;     
+   }
+
+    .work a{
+        text-decoration: none;
+        background-color: #999;
+        color: white;
+        padding: 6px 16px;
+        margin: 5%;
+    }
+    
+   .work a:selected {
+        background-color: blue;
+    }
+    
+    .work table{
+        text-align: center;
+    }
+    
+    .work td img {
+        width: 20%;
+        height: 20%;
+        border-radius: 4px;
+        padding: 2%;
+    }
+
+
+
+/* Contact */
+
+
+.contact{
+    color: white;
+    text-align: center;
+	height: 100%;
+	padding: 2%;
+    
+}
+
+   .contact form{
+        width: 40%;
+    }
+    
+   .contact label {
+        cursor: deafult;
+		float: left;
+		display: block;
+    }
+    
+   .contact input{
+       display: block;
+		width: 100%;
+		height: 34px;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.428571429;
+		vertical-align: middle;
+		border:  1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-bottom: 4%;
+    }
+	
+	.contact input[type=meassage]{
+		height: 70px;
+		margin-bottom: 2%;
+	}
+
+/* Footer Nav Menu */
+
+.site-footer p{
+	text-align: center;
+	width: 100%;
+}
+
+
+.site-footer nav ul li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #DDD;
+	float: left;
+}
+
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
+

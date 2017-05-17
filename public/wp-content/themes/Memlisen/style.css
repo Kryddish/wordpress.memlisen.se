@@ -1,0 +1,299 @@
+#sidebar { width: 23%; border: 2px #a2a2a2 solid; float: right; }
+#delimiter { clear: both; }
+#footer { border: 2px #a2a2a2 solid; }
+/* Start */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-header{
+    position: fixed;
+    background-image: url("http://www.rd.com/wp-content/uploads/sites/2/2016/04/01-cat-wants-to-tell-you-laptop.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100vw;
+    filter:contrast(120%) brightness(100%);
+    z-index: -2;
+    max-width: none; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/overlay.png);
+    z-index: -1;
+    opacity: 5s;
+}
+
+.overlay, .bg-header {
+     	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.vert-text {
+    text-align: center;
+    color:#f1f1f1;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px black;    
+}
+
+.vert-text h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 3em;
+      font-weight: 700;
+}
+
+.logo{
+    height: 10%;
+    width: 10%;
+}
+
+.learn-btn {
+    background-color: rgba(0,0,0,0.48);
+    color: white;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-color: #ccc;
+    font-weight: normal;
+    border-radius: 4px;
+}
+
+ .learn-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.intro {
+ height: 100vh;
+padding: 15%;
+}
+
+   .intro img {
+    width: 4%;
+    height: 65px;
+    }
+
+    
+
+/* Menu */
+
+
+
+.menu-header {
+    background-color: rgba(0,0,0,0.48);
+    color: white;
+    padding: 1%;
+}
+
+  .menu-header  p {
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+    
+    }
+
+navbar {
+    width: 50%;
+    float: right;
+    display: inline-block;
+    
+
+}
+
+    ul {
+    list-style-type: none;
+    margin: 0;    
+    }
+
+
+    li {
+        display: inline-block;
+        display: inline-block;
+        font-size: 20px;
+     }
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    a:hover {
+        background-color: black;
+     }
+   
+
+/* About */
+
+.about {
+    background-color: #f1f1f1;
+    height: 450px;
+    padding: 3%;
+    
+
+}
+
+   .about h2 {
+    margin: 0;
+    text-align: center;
+    float: left;
+    width: 50%;
+    }
+    
+    .about img {
+    float: right;
+    width: 50%;
+    height: 100%;
+    }
+    
+   .about p {
+    text-align: center;
+    width: 45%;
+    padding: 2%;
+    }
+
+/* My service */
+
+
+
+.services{
+    height: 100%;
+    background-color: #4D4D4D;
+    
+
+}
+
+.services h1{
+        margin: 0;
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+
+.service-box{
+    margin-bottom: 15px; 
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #D1D1D1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065); 
+    box-sizing: border-box;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    color: white;
+    margin: 4%;
+    margin-top: 2%;
+}
+
+   .service-box img{
+        width: 20%;
+        height: 20%;
+	   
+    }
+
+
+/* My work */
+
+
+.work{
+    height: 100%;
+    background-color: #f1f1f1;
+    
+
+}
+
+   .work h2 {
+        margin: 0;
+        text-align: center;
+        padding: 2%;
+        padding-bottom: 0;
+    }
+    
+   .work ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    .work li {
+        display: inline-block;
+        font-size: 18px;
+
+        
+    }
+
+    .work a{
+        text-decoration: none;
+        background-color: #999;
+        color: white;
+        padding: 6px 16px;
+        margin: 5%;
+    }
+    
+   .work a:selected {
+        background-color: blue;
+    }
+    
+    .work table{
+        text-align: center;
+    }
+    
+    .work td img {
+        width: 20%;
+        height: 20%;
+        border-radius: 4%;
+        padding: 2%;
+    }
+
+
+
+/* Contact */
+
+
+.contact{
+    color: white;
+    text-align: center;
+	height: 100%;
+    
+}
+
+   .contact form{
+        width: 40%;
+    }
+    
+   .contact label {
+        cursor: deafult;
+		float: left;
+		display: block;
+    }
+    
+   .contact input{
+       display: block;
+		width: 100%;
+		height: 34px;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.428571429;
+		vertical-align: middle;
+		border:  1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-bottom: 4%;
+    }
+	
+	.contact input[type=meassage]{
+		height: 70px;
+		margin: 0;
+		padding: 0;
+	}

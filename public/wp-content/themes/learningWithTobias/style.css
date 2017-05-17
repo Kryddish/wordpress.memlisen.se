@@ -1,0 +1,49 @@
+/*
+Theme Name: Emmelie
+Theme URI: 
+Author: Emmelie
+Author URI:
+Description:
+Text Domain: Ost
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+@font-face{
+	font-family: vendetta;
+	src: url(Engcomica.otf);
+}
+
+h1 {
+	color: darkgreen;
+	font-family: vendetta;
+	font-size: 50px;
+}
+
+a{
+	text-decoration: none;
+	color: darkgreen;
+}
+
+p {
+	color: purple;
+	font-size: 20px;
+}
+
+.post{
+	float: center;
+	border: 2px solid grey;
+	width: 40%;
+	height: 100%;
+	margin: 4%;
+	padding: 2%;
+	height: 100%;
+	box-shadow: 4px 4px 4px grey;
+	background-color: #eee;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
