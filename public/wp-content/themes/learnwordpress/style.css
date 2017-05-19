@@ -524,27 +524,17 @@ footer {
 		.categories button:hover {
 			background-color: pink;
 		}
-
-.cars {
-	display: none;
-}
-
-.animals {
-	display: none;
-}
-
-.nature {
-	display: none;
-}
-
-.other {
-	display: none;
-}
-
 .info {
 	display: none;
 }
 
-.all {
-	display: none;
+.categories {
+	width: 100%;
+}
+
+.images img{
+	height: 45%;
+	width: 45%;
+	display: inline-block;
+	padding: 2%;
 }
