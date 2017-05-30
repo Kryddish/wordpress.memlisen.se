@@ -1,0 +1,55 @@
+/* Portfolio */
+
+.portfolio {
+	height: 100vh; 
+	background-color: white;
+	text-align: center;
+}
+
+.btn-style {
+	background-color: #A07878;
+	border: none;
+	border: none;
+	float: right;
+	padding: 1%;
+	margin-right: 15%;
+	margin-top: -5%;
+	font-size: 15px;
+	color: white;
+}
+
+.btn-style:hover {
+	opacity: 0.8;
+}
+
+.portfolio img {
+	width: 25%;
+	height: 35%;
+	display: inline-block;
+	padding: 1%;
+}
+
+.portfolio img:hover {
+	background: color black;
+	opacity: 0.7;
+}
+
+
+.portfolio-post{
+	text-align: center;
+	padding: 2%;
+	width: 50%;
+	display: block;
+	margin: auto;
+	margin-bottom: 2%;
+}
+
+.p-btn {
+	background-color: transparent;
+	margin-top: 5%;
+	font-size: 20px;
+}
+
+.p-image {
+	padding-bottom: 2%;
+}

@@ -1,0 +1,45 @@
+/* Gallery */
+
+
+.gallery {
+	background-color: white;
+	height: 100vh;
+	text-align: center;
+}
+
+/*.gallery button {
+	background-color: #A07878;
+	border: none;
+	border: none;
+	float: right;
+	padding: 1%;
+	margin-right: 15%;
+	margin-top: -5%;
+	font-size: 15px;
+	color: white;
+}*/
+
+.head-img {
+	display: block;
+	text-align: center;
+	padding: 2%;
+	float: left;
+	width: 600px;
+}
+
+.gallery img:hover {
+	opacity: 0.8;
+}
+
+.small-img {
+	padding: 1%;
+	width: 10%;
+	height: 20%;
+}
+
+.images img{
+	height: 45%;
+	width: 45%;
+	display: inline-block;
+	padding: 2%;
+}

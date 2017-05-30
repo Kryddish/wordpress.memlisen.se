@@ -1,3 +1,12 @@
+<?php get_header();
+    /* Template Name: Search */
+ ?>
+
+<div class="search-box">
+<h1 class="search-title">
+<?php echo $wp_query->found_posts; ?> <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"
+</h1>
+
 <?php get_header(); 
 $s=get_search_query();
 $args = array(
@@ -11,7 +20,7 @@ if ( $the_query->have_posts() ) {
            $the_query->the_post();
                  ?>
                     <li>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <a class="search-result" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </li>
                  <?php
         }
@@ -22,6 +31,7 @@ if ( $the_query->have_posts() ) {
           <p>Sorry, No result.</
           p>
         </div>
+    </div>
 <?php } ?>
 
 <?php get_sidebar(); ?>

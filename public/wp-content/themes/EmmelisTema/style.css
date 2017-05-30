@@ -5,7 +5,10 @@ Author URI: www.memlisen.se
 Version 1.0
 */
 
-@import url(./cv-template.css);
+@import url(./styles/cv-template.css);
+@import url(./styles/gallery.css);
+@import url(./styles/portfolio.css);
+@import url(./styles/blogg.css);
 
 /* MAIN */
 @font-face {
@@ -20,10 +23,7 @@ body {
 
 }
 
-
 /* HEAD */
-
-
 .header-bg{
 	background-image: url(images/header-bg.jpg);
 	background-size: 100% 100%;
@@ -32,7 +32,6 @@ body {
 	top:0;
 	width:100%;
 	z-index:0;
-/*  	background-size: 120%;*/
 }
 
 .header-info{
@@ -99,9 +98,7 @@ body {
 }
 
 
-
 /* MENU */
-
 .header-menu{
 display: none;
 background: #49306B;
@@ -115,14 +112,12 @@ line-height: 100%;
 color: #FFFFFF;
 opacity: 1.00;
 text-decoration: none;
-
 }
 
 .header-menu ul li a:hover{
 background: #6D72C3;
 opacity: 1.00;
 border-radius: 20px;
-
 }
 
 .header-menu ul li {
@@ -144,8 +139,6 @@ border-radius: 20px;
 
 
 /* About */
-
-
 .icons {
 font-family: "FontAwesome";
 font-size: 30px;
@@ -269,45 +262,6 @@ margin-top: 2%;
 
 }
 
-
-/* Portfolio */
-
-.portfolio {
-	height: 100vh; 
-	background-color: white;
-	text-align: center;
-}
-
-.btn-style {
-	background-color: #A07878;
-	border: none;
-	border: none;
-	float: right;
-	padding: 1%;
-	margin-right: 15%;
-	margin-top: -5%;
-	font-size: 15px;
-	color: white;
-}
-
-.btn-style:hover {
-	opacity: 0.8;
-}
-
-.portfolio img {
-	width: 25%;
-	height: 35%;
-	display: inline-block;
-	padding: 1%;
-}
-
-.portfolio img:hover {
-	background: color black;
-	opacity: 0.7;
-}
-
-
-
 /* Second paralax */
 
 .second-paralax{
@@ -342,47 +296,6 @@ margin-top: 2%;
 
 
 }
-
-
-/* Gallery */
-
-
-.gallery {
-	background-color: white;
-	height: 100vh;
-	text-align: center;
-}
-
-/*.gallery button {
-	background-color: #A07878;
-	border: none;
-	border: none;
-	float: right;
-	padding: 1%;
-	margin-right: 15%;
-	margin-top: -5%;
-	font-size: 15px;
-	color: white;
-}*/
-
-.head-img {
-	display: block;
-	text-align: center;
-	padding: 2%;
-	float: left;
-	width: 600px;
-}
-
-.gallery img:hover {
-	opacity: 0.8;
-}
-
-.small-img {
-	padding: 1%;
-	width: 10%;
-	height: 20%;
-}
-
 
 /* Third paralax/contact  */
 
@@ -454,120 +367,18 @@ footer {
 	font-size: 20px;
 }
 
-/* page-blog */
-
-.blog-header {
-	position: fixed;
-	background-color: rgba(236, 138, 210, 0.4);
-	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.1);
-	width: 100%;
-	top: 0;
-
-}
-
-.blog-title {
-	font-size: 20px;
-	display: inline-block;
-}
-
-.blog-menu {
-	position: absolute;
-	right: 10%;
-	display: inline-block;
-	font-size: 20px;
-}
-	.blog-menu li {
-		margin: 0 10px;
-		list-style-type: none;
-		display: inline-block;
-	}
-		.blog-menu li a {
-			text-decoration: none;
-		}
-
-.post {
-	margin: 2%;
-	width: 40%;
-	margin-left: 15%;
-	border: 1px solid grey;
-	text-align: center;
-}
-
-.blogg{
-	display: inline-block;
-	padding-left: 25%;
-	font-size: 60px;
-	margin: 0;
-}
-
-.post h2 a{
+.search-result {
 	text-decoration: none;
-	color: Purple;
+	color: grey;
 }
 
-.blog-about {
-	width: 35%;
-	display: inline-block;
-	float: right;
-	padding-top: 5%;
-}
-
-.blog-about img {
-	width: 80%;
-	height: 80%;
-}
-
-.categories {
-	text-align: center; 
-	padding-top: 7%;
-	
-}
-	.categories button{
-		margin-right: 0.5%;
-		display: inline-block;
-		padding: 0.5%;
-		background-color: purple;
-		color: white;
-	}
-		.categories button:hover {
-			background-color: pink;
-		}
-.info {
-	display: none;
-}
-
-.categories {
-	width: 100%;
-}
-
-.images img{
-	height: 45%;
-	width: 45%;
-	display: inline-block;
-	padding: 2%;
-}
-
-
-
-.portfolio-post{
-	text-align: center;
-	padding: 2%;
+.search-box {
 	width: 50%;
-	display: block;
 	margin: auto;
-	margin-bottom: 2%;
+	border: 2px solid grey;
+	text-align: center;
 }
 
-.p-btn {
-	background-color: transparent;
-	margin-top: 5%;
-	font-size: 20px;
-}
-
-.p-image {
-	padding-bottom: 2%;
-}
-
-.post-index{
-	margin-top: 5%;
+.search-box li {
+	list-style-type: none;
 }
