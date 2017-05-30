@@ -5,6 +5,8 @@ Author URI: www.memlisen.se
 Version 1.0
 */
 
+@import url(./cv-template.css);
+
 /* MAIN */
 @font-face {
     font-family: fontAwesome;
@@ -108,7 +110,7 @@ text-align: right;
 }
 
 .header-menu ul li a{
-font-size: 20px;
+font-size: 18px;
 line-height: 100%;
 color: #FFFFFF;
 opacity: 1.00;
@@ -550,11 +552,10 @@ footer {
 .portfolio-post{
 	text-align: center;
 	padding: 2%;
-	width: 45%;
-	display: inline-block;
+	width: 50%;
+	display: block;
 	margin: auto;
 	margin-bottom: 2%;
-	height: 100%;
 }
 
 .p-btn {
@@ -564,16 +565,7 @@ footer {
 }
 
 .p-image {
-	height: 10px;
-	width: 500px;
 	padding-bottom: 2%;
-}
-
-.resume {
-	margin-top: 6%;
-	text-align: center;
-	width: 60%;
-	margin: auto;
 }
 
 .post-index{
