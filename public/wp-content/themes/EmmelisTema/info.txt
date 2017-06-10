@@ -1,0 +1,10 @@
+
+www.wordpress.memlisen.se/wp-login
+
+Användarnamn: emmelie.sundell@hotmail.com	
+Lösenord: kaktus9697
+
+Nytt sen redovisningen; 
+	-Kan byta Hero image från adminpanelen
+	- ACF pro, kan lägga till grejer i cv på ettt bättre sätt
+	-

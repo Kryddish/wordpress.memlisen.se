@@ -72,4 +72,56 @@ if ( is_page('Portfolio')) {
 
 add_action('wp_enqueue_scripts', 'load_works');
 
+function EmmelisTema_theme_customizer( $wp_customize ) {
+
+    // Create new section
+    $wp_customize->add_section( 'EmmelisTema_hero_section' , array(
+        'title'       => __( 'Hero Image', 'EmmelisTema' ),
+        'priority'    => 30,
+        'description' => 'Upload a hero to replace the default site name and description in the header',
+    ) );
+
+    $wp_customize->add_setting( 'EmmelisTema_hero' ); // Register setting
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'EmmelisTema_hero', array(
+        'label'    => __( 'Hero Image', 'EmmelisTema' ),
+        'section'  => 'EmmelisTema_hero_section',
+        'settings' => 'EmmelisTema_hero',
+    ) ) );
+}
+
+
+
+
+add_action( 'customize_register', 'EmmelisTema_theme_customizer' );
+
+
+
+function custom_enqueue_scripts() {
+
+        wp_deregister_script( 'jquery' );
+
+        wp_register_script( 'jquery', get_template_directory_uri() . '/bin/js/jquery-1.10.1.min.js', 'jquery', '1.10.1',TRUE);
+        wp_register_script( 'fittext', get_template_directory_uri() . '/bin/js/jquery.fittext.js', 'jquery', '1.0',TRUE );
+
+        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'fittext' );
+
+}
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts' );
+
+if (function_exists('register_sidebar')) {
+
+        register_sidebar(array(
+                'name' => 'Widgetized Area',
+                'id'   => 'katuhu',
+                'description'   => 'This is a widgetized area.',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h4>',
+                'after_title'   => '</h4>'
+        ));
+
+}
+
 ?>

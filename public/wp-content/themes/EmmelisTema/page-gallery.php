@@ -17,7 +17,7 @@
 	
 	<div class="categories">
 		<h1>Gallery</h1>
-		<h4>Välkommen till mitt galleri! Klicka på en bild för mer info, för att beställa klicka på info.</h4>
+		<h5>Välkommen till mitt galleri! Klicka på en bild för mer info, för att beställa klicka på info.</h5>
 		<button>Alla</button>
 		<button>Bilar</button>
 		<button>Djur</button>

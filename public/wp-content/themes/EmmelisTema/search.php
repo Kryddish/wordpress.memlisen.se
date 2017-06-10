@@ -20,7 +20,7 @@ if ( $the_query->have_posts() ) {
            $the_query->the_post();
                  ?>
                     <li>
-                        <a class="search-result" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <a class="search-result" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </li>
                  <?php
         }

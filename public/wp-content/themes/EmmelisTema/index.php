@@ -30,4 +30,10 @@ if (have_posts() ){
 	}
 }
 
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('custom_sidebar') ) : ?>
+
+
+<?php endif; ?>
+
+
  get_footer(); ?>

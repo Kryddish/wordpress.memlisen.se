@@ -20,13 +20,14 @@
 	<img src="http://www.critterbabies.com/wp-content/gallery/parrots/a-baa-baby-parrots-cute.jpg">
 	<h4>About me</h4>
 	<p>Text</p>
-	<?php wp_get_archives( array( 'type' => 'daily', 'limit' => 16) );
+
+	<?php register_sidebar();  wp_get_archives( array( 'type' => 'daily', 'limit' => 16) );
 	get_search_form() ?>
 	
 </div>
 <?php
 
-if (have_posts()) :
+if (have_posts())
 
 $cats = get_categories();
 query_posts("cat=-5&post_per_page=100");
@@ -53,11 +54,8 @@ query_posts("cat=-5&post_per_page=100");
 				}
 				
 				echo trim($output, $separator);
-				
 			}
-			
 			?>
-			
 			</p>
 		
 		<?php the_excerpt(); ?>

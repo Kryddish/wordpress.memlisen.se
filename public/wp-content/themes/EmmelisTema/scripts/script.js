@@ -27,8 +27,7 @@ $(document).ready(function() {
 
 		if (scroll < $('.header-bg').height()) {
 			$('.header-bg').css({
-				'background-position-y' : scroll / 10 + '%',
-				'height' : headerHeight - scroll + 'px'
+				'top': scroll / 32 + '%'
 			})
 		}
 
